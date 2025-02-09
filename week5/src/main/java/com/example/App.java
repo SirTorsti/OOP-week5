@@ -18,7 +18,14 @@ public class App
 
         while(!exit) {
             System.out.println("1) Lisää kone\n2) Listaa kaikki koneet\n0) Lopeta ohjelma");
-            int choice = scanner.nextInt();
+            int choice = -1;
+            if (scanner.hasNextInt()) {
+                choice = scanner.nextInt();
+            } else {
+                System.out.println("Virheellinen syöte, yritä uudelleen.");
+                scanner.next();
+                continue;
+            }
             switch(choice){
                 
                 case 1:
