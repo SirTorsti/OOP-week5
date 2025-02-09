@@ -18,11 +18,9 @@ public class Factory {
         return name;
     }
     public void getMachines() {
-        for (int i = 0; i < machines.size(); i++) {
-            System.out.println(machines.get(i).getMachineDetails());
-            if (i < machines.size() - 1) {
-                System.out.println();
-            }
+        for (Machine machine : machines) {
+            System.out.println(machine.getMachineDetails());
+            System.out.println("");
         }
     }
 }
