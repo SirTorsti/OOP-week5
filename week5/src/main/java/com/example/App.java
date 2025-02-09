@@ -48,7 +48,10 @@ public class App
                 break;
                 case 2:
                 System.out.println("Tehtaasta " + factory.getName() + " löytyy seuraavat koneet:");
-                factory.getMachines();
+                for (Machine m : factory.getMachines()) {
+                    System.out.println(m.getMachineDetails());
+                    System.out.println();
+                }
                 break;
 
                 case 0:
