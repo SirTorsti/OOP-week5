@@ -3,17 +3,17 @@ package com.example;
 public class Machine {
     private String type;
     private String model;
-    private Worker worker;
+    private Worker operator;
 
 
     public Machine(String type, String model, Worker worker) {
         this.type = type;
         this.model = model;
-        this.worker = worker;
+        this.operator = worker;
     }
 
     public String getMachineDetails() {
-        return "Koneen tiedot: " + type + ", " + model + "\nTyöntekijän tiedot: " + worker.getWorkerName() + ", " + worker.getWorkerRole();
+        return "Koneen tiedot: " + type + ", " + model + "\nTyöntekijän tiedot: " + operator.getWorkerName() + ", " + operator.getWorkerRole();
     }
     
 }
