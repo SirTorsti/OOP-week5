@@ -17,10 +17,7 @@ public class Factory {
     public String getName() {
         return name;
     }
-    public void getMachines() {
-        for (Machine machine : machines) {
-            System.out.println(machine.getMachineDetails());
-            System.out.println("");
-        }
+    public ArrayList<Machine> getMachines() {
+        return machines;
     }
 }
