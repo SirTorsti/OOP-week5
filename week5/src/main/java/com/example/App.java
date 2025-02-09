@@ -32,12 +32,16 @@ public class App
                 case 1:
                 System.out.println("Anna koneen tyyppi: ");
                 String machineType = scanner.next();
+                scanner.nextLine();
                 System.out.println("Anna koneen malli: ");
                 String machineModel = scanner.next();
+                scanner.nextLine();
                 System.out.println("Anna työntekijän nimi: ");
                 String workerName = scanner.next();
+                scanner.nextLine();
                 System.out.println("Anna työntekijän ammattinimike: ");
                 String workerRole = scanner.next();
+                scanner.nextLine();
                 Worker worker = new Worker(workerName, workerRole);
                 Machine machine = new Machine(machineType, machineModel, worker);
                 factory.addMachine(machine);
