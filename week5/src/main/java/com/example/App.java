@@ -21,6 +21,7 @@ public class App
             int choice = -1;
             if (scanner.hasNextInt()) {
                 choice = scanner.nextInt();
+                scanner.nextLine();
             } else {
                 System.out.println("Virheellinen syöte, yritä uudelleen.");
                 scanner.next();
