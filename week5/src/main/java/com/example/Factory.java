@@ -20,6 +20,7 @@ public class Factory {
     public void getMachines() {
         for (Machine machine : machines) {
             System.out.println(machine.getMachineDetails());
+            System.out.println();
         }
     }
 }
