@@ -47,7 +47,7 @@ public class App
                 System.out.println("Kone lisätty!");
                 break;
                 case 2:
-                System.out.println("Tehtaasta " + factory.getFactoryName() + " löytyy seuraavat koneet:");
+                System.out.println("Tehtaasta " + factory.getName() + " löytyy seuraavat koneet:");
                 factory.getMachines();
                 break;
 

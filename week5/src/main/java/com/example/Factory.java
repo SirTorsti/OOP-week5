@@ -14,7 +14,7 @@ public class Factory {
         machines.add(machine);
     }
 
-    public String getFactoryName() {
+    public String getName() {
         return name;
     }
     public void getMachines() {
